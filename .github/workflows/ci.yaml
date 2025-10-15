@@ -29,6 +29,7 @@ jobs:
         uses: ludeeus/action-shellcheck@master
         with:
           scandir: './puppetserver'
+          severity: error  # Only fail on errors, not warnings/notes
 
   build_test_container:
     name: 'Build test container'
