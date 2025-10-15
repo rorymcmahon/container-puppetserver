@@ -1,0 +1,22 @@
+name: Test CI Setup
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Test build versions
+        run: |
+          echo "Testing build versions file..."
+          cat build_versions.json
+          jq . build_versions.json
+      
+      - name: Test matrix setup
+        run: |
+          echo "matrix=$(jq -c . build_versions.json)" >> $GITHUB_OUTPUT
+          echo "Matrix setup successful"
