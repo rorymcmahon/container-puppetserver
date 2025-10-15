@@ -20,9 +20,15 @@ jobs:
         run: echo "matrix=$(jq -c . build_versions.json)" >> $GITHUB_OUTPUT
 
   general_ci:
-    uses: voxpupuli/crafty/.github/workflows/general_ci.yaml@main
-    with:
-      shellcheck_scan_dir: './puppetserver'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: './puppetserver'
 
   build_test_container:
     name: 'Build test container'

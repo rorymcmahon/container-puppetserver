@@ -1,15 +1,9 @@
 ---
-# Managed by modulesync - DO NOT EDIT
-# https://voxpupuli.org/docs/updating-files-managed-with-modulesync/
-
-# https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
-
 changelog:
   exclude:
     labels:
       - duplicate
       - invalid
-      - modulesync
       - question
       - skip-changelog
       - wont-fix
@@ -32,6 +26,14 @@ changelog:
       labels:
         - documentation
         - docs
+
+    - title: Container Updates 🐳
+      labels:
+        - container
+
+    - title: CI/CD Updates 🚀
+      labels:
+        - ci
 
     - title: Dependency Updates ⬆️
       labels:

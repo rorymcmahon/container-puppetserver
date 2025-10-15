@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased] - Fork Transition
+
+**Project Transition:**
+- Forked from voxpupuli/container-puppetserver to continue independent development
+- Updated CI/CD pipelines to publish to rorymcmahon repositories
+- Maintained compatibility with existing configurations
+- Added proper attribution to original authors (Puppet Inc. and Voxpupuli community)
+
 ## [v1.7.0](https://github.com/voxpupuli/container-puppetserver/tree/v1.7.0) (2025-01-31)
 
 [Full Changelog](https://github.com/voxpupuli/container-puppetserver/compare/v1.6.0...v1.7.0)

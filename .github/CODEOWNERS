@@ -1,5 +1,8 @@
-# Managed by modulesync - DO NOT EDIT
-# https://voxpupuli.org/docs/updating-files-managed-with-modulesync/
+# Global code owners
+* @rorymcmahon
 
-# No matter which file got changed, request a review from the main developers
- * @voxpupuli/tools-containerimages
+# Dockerfile and container configuration
+puppetserver/ @rorymcmahon
+
+# CI/CD workflows
+.github/ @rorymcmahon

@@ -1,6 +1,15 @@
 ---
-# Managed by modulesync - DO NOT EDIT
-# https://voxpupuli.org/docs/updating-files-managed-with-modulesync/
-
 skip-changelog:
  - head-branch: ['^release-*']
+
+documentation:
+ - changed-files:
+   - any-glob-to-any-file: ['*.md', 'docs/**']
+
+ci:
+ - changed-files:
+   - any-glob-to-any-file: ['.github/**']
+
+container:
+ - changed-files:
+   - any-glob-to-any-file: ['puppetserver/**']
